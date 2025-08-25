@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('{{ url_for('static', filename='images/bg1.jpg') }}');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 40px;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 800px;
+      width: 90%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .question {
+      margin-bottom: 20px;
+      padding: 10px;
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .submit-btn {
+      padding: 10px 25px;
+      margin-top: 20px;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .submit-btn:hover {
+      background: #218838;
+    }
+
+    label {
+      display: block;
+      margin-left: 20px;
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+
+    #timer {
+      font-size: 18px;
+      color: red;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Quiz</h2>
+  <div id="timer">Loading timer...</div>
+
+  <form id="quizForm" onsubmit="event.preventDefault(); submitQuiz();">
+    {% for q in questions %}
+      <div class="question">
+        <p><strong>{{ loop.index }}. {{ q.question }}</strong></p>
+        {% set idx = loop.index0 %}
+        {% for opt in q.options %}
+          <label>
+            <input type="radio" name="q{{ idx }}" value="{{ opt }}">
+            {{ opt }}
+          </label>
+        {% endfor %}
+      </div>
+    {% endfor %}
+    <button class="submit-btn" type="submit">Submit</button>
+  </form>
+</div>
+
+<script>
+  // Timer Setup
+  let timeLeft = {{ time }} * 60;
+  const timerDisplay = document.getElementById("timer");
+
+  const timer = setInterval(() => {
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+    timerDisplay.textContent = `Time Remaining: ${minutes}:${seconds.toString().padStart(2, '0')}`;
+
+    if (timeLeft <= 0) {
+      clearInterval(timer);
+      alert("Time's up! Submitting your quiz.");
+      submitQuiz();
+    }
+    timeLeft--;
+  }, 1000);
+
+  // Submit function
+  function submitQuiz() {
+    const form = document.getElementById("quizForm");
+    const formData = new FormData(form);
+    const answers = {};
+
+    for (let [key, value] of formData.entries()) {
+      answers[key] = value;
+    }
+
+    fetch("/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ answers: answers })
+    })
+    .then(res => res.json())
+    .then(data => {
+      window.location.href = data.redirect || "/result";
+    })
+    .catch(error => {
+      alert("Error submitting quiz");
+      console.error(error);
+    });
+  }
+
+  // Allow radio button deselection on double-click
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('input[type="radio"]').forEach(radio => {
+      radio.addEventListener('mousedown', function () {
+        this.dataset.wasChecked = this.checked;
+      });
+
+      radio.addEventListener('click', function () {
+        if (this.dataset.wasChecked === "true") {
+          this.checked = false;
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

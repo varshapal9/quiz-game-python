@@ -1,0 +1,152 @@
+[
+  {
+    "question": "Which SQL command is used to retrieve data from a database?",
+    "options": ["GET", "SELECT", "RETRIEVE", "PULL"],
+    "answer": "SELECT"
+  },
+  {
+    "question": "Which SQL keyword is used to sort the result-set?",
+    "options": ["ORDER", "SORT BY", "ORDER BY", "GROUP BY"],
+    "answer": "ORDER BY"
+  },
+  {
+    "question": "What does SQL stand for?",
+    "options": ["Structured Query Language", "Simple Query Language", "Sequential Query Language", "Standard Question Language"],
+    "answer": "Structured Query Language"
+  },
+  {
+    "question": "Which SQL statement is used to update data in a database?",
+    "options": ["UPDATE", "MODIFY", "SET", "CHANGE"],
+    "answer": "UPDATE"
+  },
+  {
+    "question": "Which clause is used to filter rows returned by a query?",
+    "options": ["WHERE", "IF", "HAVING", "FILTER"],
+    "answer": "WHERE"
+  },
+  {
+    "question": "Which SQL clause is used with GROUP BY to filter groups?",
+    "options": ["WHERE", "FILTER", "HAVING", "LIMIT"],
+    "answer": "HAVING"
+  },
+  {
+    "question": "What does the PRIMARY KEY do?",
+    "options": ["Allows duplicate values", "Uniquely identifies each row", "Creates a relationship", "None of these"],
+    "answer": "Uniquely identifies each row"
+  },
+  {
+    "question": "Which constraint ensures that a column cannot have NULL values?",
+    "options": ["NOT NULL", "UNIQUE", "PRIMARY", "CHECK"],
+    "answer": "NOT NULL"
+  },
+  {
+    "question": "Which SQL command is used to remove a table from a database?",
+    "options": ["DELETE TABLE", "REMOVE TABLE", "DROP TABLE", "TRUNCATE TABLE"],
+    "answer": "DROP TABLE"
+  },
+  {
+    "question": "Which of these is a valid SQL aggregate function?",
+    "options": ["SUM", "TOTAL", "CALCULATE", "MERGE"],
+    "answer": "SUM"
+  },
+  {
+    "question": "What does the COUNT() function do?",
+    "options": ["Counts numeric columns", "Counts total tables", "Counts rows", "Counts characters"],
+    "answer": "Counts rows"
+  },
+  {
+    "question": "Which command is used to remove all rows from a table but keep its structure?",
+    "options": ["DELETE", "DROP", "REMOVE", "TRUNCATE"],
+    "answer": "TRUNCATE"
+  },
+  {
+    "question": "Which of the following is used to prevent duplicate values in a column?",
+    "options": ["NOT NULL", "UNIQUE", "CHECK", "DEFAULT"],
+    "answer": "UNIQUE"
+  },
+  {
+    "question": "Which SQL function returns the highest value in a column?",
+    "options": ["TOP", "MAX", "HIGH", "GREATEST"],
+    "answer": "MAX"
+  },
+  {
+    "question": "Which join returns only the rows that have matching values in both tables?",
+    "options": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL JOIN"],
+    "answer": "INNER JOIN"
+  },
+  {
+    "question": "Which clause is used to limit the number of rows returned?",
+    "options": ["LIMIT", "ROWCOUNT", "TOP", "RESTRICT"],
+    "answer": "LIMIT"
+  },
+  {
+    "question": "Which of the following is not a valid SQL data type?",
+    "options": ["VARCHAR", "INT", "FLOAT", "WORD"],
+    "answer": "WORD"
+  },
+  {
+    "question": "Which SQL statement is used to delete data from a table?",
+    "options": ["REMOVE", "ERASE", "DELETE", "DROP"],
+    "answer": "DELETE"
+  },
+  {
+    "question": "Which operator is used to combine multiple conditions in a WHERE clause?",
+    "options": ["IF", "AND/OR", "BOTH", "TOGETHER"],
+    "answer": "AND/OR"
+  },
+  {
+    "question": "What does a FOREIGN KEY do?",
+    "options": ["Enforces uniqueness", "Links tables", "Deletes data", "None"],
+    "answer": "Links tables"
+  },
+  {
+    "question": "Which statement creates a new table?",
+    "options": ["NEW TABLE", "CREATE TABLE", "ADD TABLE", "BUILD TABLE"],
+    "answer": "CREATE TABLE"
+  },
+  {
+    "question": "What keyword is used to change the structure of a table?",
+    "options": ["MODIFY", "CHANGE", "ALTER", "UPDATE"],
+    "answer": "ALTER"
+  },
+  {
+    "question": "Which function gives the average of a column?",
+    "options": ["TOTAL", "MEDIAN", "AVG", "MEAN"],
+    "answer": "AVG"
+  },
+  {
+    "question": "Which clause is used to group rows that have the same values?",
+    "options": ["ORDER BY", "GROUP BY", "SORT BY", "COLLECT"],
+    "answer": "GROUP BY"
+  },
+  {
+    "question": "Which SQL keyword is used to rename a column or table?",
+    "options": ["RENAME", "CHANGE", "AS", "MODIFY"],
+    "answer": "AS"
+  },
+  {
+    "question": "What keyword is used to check if a value exists in a list?",
+    "options": ["IN", "EXISTS", "HAS", "WITHIN"],
+    "answer": "IN"
+  },
+  {
+    "question": "Which command is used to add a new column to a table?",
+    "options": ["ALTER TABLE ADD", "MODIFY TABLE", "ADD COLUMN", "NEW COLUMN"],
+    "answer": "ALTER TABLE ADD"
+  },
+  {
+    "question": "What does the DISTINCT keyword do?",
+    "options": ["Removes duplicates", "Sorts data", "Creates indexes", "Deletes rows"],
+    "answer": "Removes duplicates"
+  },
+  {
+    "question": "What does the LIKE operator do?",
+    "options": ["Matches patterns", "Checks equality", "Compares numbers", "Deletes similar data"],
+    "answer": "Matches patterns"
+  },
+  {
+    "question": "Which command is used to grant privileges in SQL?",
+    "options": ["GRANT", "ALLOW", "PERMIT", "ENABLE"],
+    "answer": "GRANT"
+  }
+]

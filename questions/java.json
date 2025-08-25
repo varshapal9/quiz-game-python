@@ -1,0 +1,152 @@
+[
+  {
+    "question": "Which of the following is not a Java keyword?",
+    "options": ["class", "if", "then", "new"],
+    "answer": "then"
+  },
+  {
+    "question": "What is the size of an `int` variable in Java?",
+    "options": ["2 bytes", "4 bytes", "8 bytes", "Depends on the system"],
+    "answer": "4 bytes"
+  },
+  {
+    "question": "Which method is the entry point of a Java application?",
+    "options": ["start()", "main()", "run()", "init()"],
+    "answer": "main()"
+  },
+  {
+    "question": "What does JVM stand for?",
+    "options": ["Java Virtual Memory", "Java Verified Machine", "Java Virtual Machine", "Joint Virtual Memory"],
+    "answer": "Java Virtual Machine"
+  },
+  {
+    "question": "Which of these is used to handle exceptions?",
+    "options": ["catch", "try", "throw", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "Which of these is a valid declaration of a String?",
+    "options": ["String str = 'Hello';", "char str[] = \"Hello\";", "String str = \"Hello\";", "String str = new char('H', 'e', 'l', 'l', 'o');"],
+    "answer": "String str = \"Hello\";"
+  },
+  {
+    "question": "Which package contains the `Scanner` class?",
+    "options": ["java.io", "java.util", "java.lang", "java.text"],
+    "answer": "java.util"
+  },
+  {
+    "question": "Which operator is used for object comparison?",
+    "options": ["==", "!=", "equals()", "<>"],
+    "answer": "equals()"
+  },
+  {
+    "question": "What is the default value of a boolean variable?",
+    "options": ["true", "false", "0", "null"],
+    "answer": "false"
+  },
+  {
+    "question": "Which keyword is used to create a subclass?",
+    "options": ["super", "extends", "this", "implements"],
+    "answer": "extends"
+  },
+  {
+    "question": "Which keyword is used to define an interface?",
+    "options": ["class", "interface", "implements", "extends"],
+    "answer": "interface"
+  },
+  {
+    "question": "Which of these is not an access modifier?",
+    "options": ["public", "protected", "friendly", "private"],
+    "answer": "friendly"
+  },
+  {
+    "question": "Which loop is guaranteed to execute at least once?",
+    "options": ["for", "while", "do-while", "None"],
+    "answer": "do-while"
+  },
+  {
+    "question": "Java is...",
+    "options": ["Platform dependent", "Platform independent", "OS dependent", "None of the above"],
+    "answer": "Platform independent"
+  },
+  {
+    "question": "Which exception is thrown when array index is out of bounds?",
+    "options": ["IndexOutOfBoundsException", "NullPointerException", "IOException", "ArrayIndexException"],
+    "answer": "IndexOutOfBoundsException"
+  },
+  {
+    "question": "Which of these is a wrapper class?",
+    "options": ["int", "Integer", "float", "double"],
+    "answer": "Integer"
+  },
+  {
+    "question": "Which of these keywords is used to inherit a class?",
+    "options": ["this", "super", "extends", "implements"],
+    "answer": "extends"
+  },
+  {
+    "question": "Which class is the parent class of all classes?",
+    "options": ["Object", "Class", "Superclass", "Main"],
+    "answer": "Object"
+  },
+  {
+    "question": "Which collection class allows you to store unique elements only?",
+    "options": ["List", "Set", "Map", "ArrayList"],
+    "answer": "Set"
+  },
+  {
+    "question": "What is the return type of the `hashCode()` method?",
+    "options": ["int", "float", "String", "long"],
+    "answer": "int"
+  },
+  {
+    "question": "What is the purpose of the `final` keyword?",
+    "options": ["Prevent inheritance", "Prevent method override", "Make variable constant", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "Which of the following is not a primitive data type?",
+    "options": ["int", "boolean", "String", "double"],
+    "answer": "String"
+  },
+  {
+    "question": "Which interface must be implemented to create a thread?",
+    "options": ["Runnable", "Threadable", "Callable", "Thread"],
+    "answer": "Runnable"
+  },
+  {
+    "question": "Which method is used to start a thread?",
+    "options": ["run()", "start()", "execute()", "init()"],
+    "answer": "start()"
+  },
+  {
+    "question": "Which class is used to take input from the user?",
+    "options": ["Scanner", "InputReader", "BufferedReader", "System.in"],
+    "answer": "Scanner"
+  },
+  {
+    "question": "What is the base of all exception classes?",
+    "options": ["Error", "Exception", "Throwable", "RuntimeException"],
+    "answer": "Throwable"
+  },
+  {
+    "question": "Which of these is not a feature of Java?",
+    "options": ["Object-oriented", "Portable", "Dynamic", "Low-level"],
+    "answer": "Low-level"
+  },
+  {
+    "question": "How do you declare an array in Java?",
+    "options": ["array arr[];", "int arr[];", "int arr = [];", "arr int[];"],
+    "answer": "int arr[];"
+  },
+  {
+    "question": "Which operator is used for logical AND?",
+    "options": ["&", "&&", "AND", "|"],
+    "answer": "&&"
+  },
+  {
+    "question": "What will `10 / 3` return in Java?",
+    "options": ["3", "3.33", "3.0", "Exception"],
+    "answer": "3"
+  }
+]

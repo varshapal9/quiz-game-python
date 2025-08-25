@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            background-image: url('{{ url_for('static', filename='images/bg4.jpg') }}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .result-container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .score {
+            font-size: 22px;
+            color: #28a745;
+            margin-bottom: 15px;
+        }
+
+        .email-status {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        a.button:hover {
+            background-color: #0056b3;
+        }
+
+        a.exit-button {
+            background-color: #dc3545;
+        }
+
+        a.exit-button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1>Quiz Completed!</h1>
+        {% if score is not none %}
+            <div class="score">Your Score: {{ score }} / {{ total }}</div>
+            <div class="email-status">Your result has been emailed to <strong>{{ email }}</strong>.</div>
+        {% else %}
+            <div class="score">No score found. Please try again.</div>
+        {% endif %}
+        <div class="button-group">
+            <a href="/index" class="button">Take Another Quiz</a>
+            <a href="{{ url_for('logout') }}" class="button exit-button">Exit</a>
+
+        </div>
+    </div>
+</body>
+</html>

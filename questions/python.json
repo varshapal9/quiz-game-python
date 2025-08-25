@@ -1,0 +1,153 @@
+[
+    {
+        "question": "What is the output of print(2 ** 3)?",
+        "options": ["6", "8", "9", "4"],
+        "answer": "8"
+    },
+    {
+        "question": "What keyword is used to create a function?",
+        "options": ["def", "function", "fun", "define"],
+        "answer": "def"
+    },
+    {
+        "question": "What function is used to open a file in Python for reading?",
+        "options": ["open_file()", "read_file()", "open()", "read()"],
+        "answer": "open()"
+    },
+    {
+        "question": "In Python, what does the readline() function do?",
+        "options": ["Reads the entire file as a string", "Reads a specific line from the file", "Reads all the lines from the file", "Reads the first line from the file"],
+        "answer": "Reads the first line from the file"
+    },
+    {
+        "question": "What function is used to read the entire contents of a file as a string in Python?",
+        "options": ["read_file()", "read_string()", "readlines()", "read()"],
+        "answer": "read()"
+    },
+    {
+        "question": "Which of the following statements is true about reading files in Python?",
+        "options": ["r", "w", "a", "x"],
+        "answer": "a"
+    },
+    {
+        "question": "What method is used to close a file object in Python?",
+        "options": ["close()", "shutdown()", "end()", "terminate()"],
+        "answer": "close()"
+    },
+    {
+        "question": "Which function is used to write data to a file in Python?",
+        "options": ["write()", "append()", "add()", "insert()"],
+        "answer": "write()"
+    },
+    {
+        "question": "What is the purpose of the with statement when dealing with file operations in Python?",
+        "options": ["It opens a file for reading", " It ensures proper handling of resources and automatically closes the file when done", "It writes data to a file", "It appends data to a file"],
+        "answer": " It ensures proper handling of resources and automatically closes the file when done"
+    },
+    {
+        "question": "Which method is used to check if a file exists in Python?",
+        "options": ["exists()", " check_file()", " isfile()", "file_exists()"],
+        "answer": "isfile()"
+    },
+    {
+        "question": "What is the difference between the ‘r’ mode and the ‘rb’ mode when opening a file in Python?",
+        "options": ["There is no difference", "The ‘r’ mode is for reading text files, while the ‘rb’ mode is for reading binary files", "The ‘rb’ mode is for reading text files, while the ‘r’ mode is for reading binary files", "The ‘r’ mode opens the file in read-write mode, while the ‘rb’ mode opens the file in read-only mode"],
+        "answer": "The ‘r’ mode is for reading text files, while the ‘rb’ mode is for reading binary files"
+    },
+    {
+        "question": "Which mode is used to open a file for reading and writing in Python?",
+        "options": ["r", "w", "r+", "w+"],
+        "answer": "r+"
+    },
+    {
+        "question": "What function is used to move the file cursor to a specific position in a file in Python?",
+        "options": ["seek()", "move_cursor()", "set_position()", "position()"],
+        "answer": "seek()"
+    },
+    {
+        "question": "What does the tell() method do in Python file handling?",
+        "options": [" Returns the current line number being read", "Returns the current position of the file cursor", "Tells if the file exists or not", "Tells the file size"],
+        "answer": "Returns the current position of the file cursor"
+    },
+    {
+        "question": "Which of the following statements is true about reading files in Python?",
+        "options": ["The read() method reads one line at a time", "The readline() method reads the entire file at once", "The readlines() method reads one character at a time", "The read() method reads the entire file at once"],
+        "answer": "The read() method reads the entire file at once"
+    },
+    {
+        "question": "What is the output of the following code? \n file = open(\"data.txt\", \"w\")\nfile.write(\"Hello, World!\")\nfile.close()\n ",
+        "options": ["It writes “Hello, World!” to the file data.txt", "It reads “Hello, World!” from the file data.txt", " It appends “Hello, World!” to the file data.txt", "It does nothing"],
+        "answer": "It writes “Hello, World!” to the file data.txt"
+    },
+    {
+        "question": "Which of the following is used to open a file in Python in binary mode?",
+        "options": ["open(‘file.txt’, ‘b’)", "open(‘file.txt’, ‘binary’)", "open(‘file.txt’, ‘rb’)", "open(‘file.txt’, ‘wb’)"],
+        "answer": "open(‘file.txt’, ‘rb’)"
+    },
+    {
+        "question": "What is the purpose of the os.path.isfile() function in Python?",
+        "options": ["To create a new file", "To check if a file exists", "To read the contents of a file", "To read the contents of a file"],
+        "answer": "To check if a file exists"
+    },
+    {
+        "question": "Which method is used to write multiple lines to a file in Python?",
+        "options": ["writelines()", " write_lines()", " write_multiple_lines()", "append_lines()"],
+        "answer": "writelines()"
+    },
+    {
+        "question": "What happens if you open a file in Python using the ‘x’ mode, and the file already exists?",
+        "options": ["It raises a FileExistsError", "It overwrites the existing file", "It appends data to the existing file", "It raises a FileNotFoundError"],
+        "answer": "It raises a FileExistsError"
+    },
+    {
+        "question": "How can you read a JSON file in Python?",
+        "options": ["Using the load_json() function", "Using the read_json() function", "Using the json.load() function", "Using the json.read() function"],
+        "answer": "Using the json.load() function"
+    },
+    {
+        "question": "Which method is used to write a dictionary to a JSON file in Python?",
+        "options": [" write_dict()", "save_json()", "json.dump()", "write_json()"],
+        "answer": "json.dump()"
+    },
+    {
+        "question": "What is the purpose of the ‘a+’ mode when opening a file in Python?",
+        "options": ["It opens the file in append mode for reading and writing", "It opens the file in append mode for writing only", "It opens the file in append mode for reading only", "It opens the file in append mode for reading, writing, and creating"],
+        "answer": "It opens the file in append mode for reading and writing"
+    },
+    {
+        "question": "Which module is used for reading and writing CSV files in Python?",
+        "options": ["os", "csv", "pandas", "sys"],
+        "answer": "csv"
+    },
+    {
+        "question": " What is the output of the following code?\n with open('data.txt', 'r') as file:\n    print(file.read())\n",
+        "options": ["Prints the contents of data.txt", "Reads the contents of data.txt into a variable", "Raises a FileNotFoundError", "Writes to data.txt"],
+        "answer": "Raises a FileNotFoundError"
+    },
+    {
+        "question": "How can you write binary data to a file in Python?",
+        "options": ["Using the write_binary() function", "Using the binary.write() function", "Using the write() function with bytes as input", "Using the binary_write() function"],
+        "answer": "Using the write() function with bytes as input"
+    },
+    {
+        "question": "What does the ‘rb+’ mode do when opening a file in Python?",
+        "options": ["Opens the file for reading and writing in binary mode", "Opens the file for reading and writing, creating the file if it does not exist", "Opens the file for reading in binary mode", "Opens the file for reading and writing, truncating the file to zero length"],
+        "answer": "Opens the file for reading and writing in binary mode"
+    },
+    {
+        "question": "Which method is used to read CSV files in Python?",
+        "options": ["read_csv()", "read()", "csv_read()", "csv.reader()"],
+        "answer": "csv.reader()"
+    },
+    {
+        "question": "What does the ‘wb’ mode do when opening a file in Python?",
+        "options": ["Opens the file for reading and writing in binary mode", "Opens the file for writing in binary mode", "Opens the file for reading in binary mode", "Opens the file for reading and writing, truncating the file to zero length"],
+        "answer": "Opens the file for writing in binary mode"
+    },
+    {
+        "question": "How do you read only the first n characters from a file in Python?",
+        "options": ["Using the read(n) method", "Using the readlines(n) method", "Using the readline(n) method", "Using the read_first(n) method"],
+        "answer": "Using the read(n) method"
+    }
+
+]
