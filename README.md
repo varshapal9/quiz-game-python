@@ -42,5 +42,3 @@ Database	MySQL
 Data Format	JSON
 
 Frontend	HTML, CSS
-
-Email Service	SMTP (via Flask-Mail or similar)
