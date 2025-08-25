@@ -34,9 +34,13 @@ Quiz results are automatically sent to the user's email address
 Clean and responsive design using HTML templates and static assets
 
 🛠️ Tech Stack
-Layer	Technology
+
 Backend	Flask (Python)
+
 Database	MySQL
+
 Data Format	JSON
+
 Frontend	HTML, CSS
+
 Email Service	SMTP (via Flask-Mail or similar)
