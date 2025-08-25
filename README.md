@@ -2,6 +2,7 @@
 Welcome to the Quiz Game App, a dynamic web-based quiz platform built with Flask. Users can challenge themselves across three core subjects—Python, SQL, and Java—with customizable question sets and timed sessions. Results are automatically emailed to participants for a seamless experience.
 
 🚀 Features
+
 📚 Subjects Available:
 
 Python
